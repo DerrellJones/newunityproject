@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class NewBehaviourScript : MonoBehaviour
 {
     public GameObject groundChecker;
     public LayerMask whatIsGround;
 
     public float jumpForce = 500f;
-    public float speed = 1f;
 
     float maxSpeed = 10.0f;
     bool isOnGround = false;
-
+     
     //Create a reference to the Rigidbody2D so we can manipulate it
     Rigidbody2D playerobject;
 
@@ -32,7 +31,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            maxSpeed = 8.0f;
+            maxSpeed = 4.0f;
         }
 
         //Create a 'float' that will be equal to the players horizontal input
@@ -50,5 +49,3 @@ public class PlayerController : MonoBehaviour
         }
     }
 }
-
- 
